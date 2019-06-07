@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Intermediate Foundations">
+    <title>Intermediate Foundations</title>
+</head>
+<body>
+    <script>
+
+        // Sigma 
+        /*function sigma(num){
+            var sum = 0; 
+            if (num > 0){
+                for (var i = 1; i <= num; i ++){
+                    sum += i;
+                }
+                return sum;
+            }
+            else {
+                return("Please input positive integar...");
+            }
+        }
+        console.log(sigma(-5));*/
+
+        // Factorial
+        /*function factorial(num){
+            var factor = 1;
+            if (num > 0){
+                for (var i = 1; i <= num; i ++){
+                    factor *= i;
+                }
+                return factor;
+            }
+            else {
+                return("Please input positive integar...");
+            }
+        }
+        console.log(factorial(3)); */
+
+        // Fibonacci *** NOT FINISHED ***
+        /*function fibonacci(y){
+            var sum = 0;
+            var x = [0,1];
+            for (var i = 2; i < y; i ++){
+                x[i] = (x[i - 1]) + (x[i -2]);
+            }
+            sum = x[x.length - 1] + x[x.length -2];
+            return sum;
+        }
+        console.log(fibonacci(7));*/
+
+        // Array: Second-to-Last
+        /*function s2l(x){
+            if (x.length > 1){
+                return x[x.length - 2];
+                }
+            else {
+                return null;
+            }
+        }
+        console.log(s2l([42,true,"Foo",7])); */
+
+        // Array: Nth-to-Last
+        /*function n2l(x,y){
+            if (x.length > 1){
+                return x[x.length - y];
+                }
+            else {
+                return null;
+            }
+        }
+        console.log(n2l([5,2,3,6,4,9,7],3));*/
+
+        // Array: Second-Largest
+        /*function secondlargest(x){
+            if (x.length > 1){
+                for (var j = x.length; j > 0; j--){
+                    for (var i = 0; i < j; i ++){
+                        if (x[i] > x[i+1]){
+                            temp = x[i];
+                            x[i] = x[i+1];
+                            x[i+1] = temp;
+                        }
+                    }
+                }
+                return x[x.length - 2];
+            }
+            else {
+                return null;
+            }
+        }
+        console.log(secondlargest([42,1,4,3.14,7]));*/
+
+        // Double Trouble
+        /*function dtrouble(x){
+            j = (x.length) + (x.length - 1);
+            for (var i = x.length - 1; i >= 0; i--){
+                x[j] = x[i];
+                j = j -2; 
+            }
+            for (var k = 2; k < x.length; k ++){
+                if (k%2 == 0){
+                    x[k] = x[k + 1];
+                }
+            }
+            console.log(x);
+        }
+        dtrouble([4,"foo",42,7,8]);*/
+    
+    </script>
+    
+</body>
+</html>
